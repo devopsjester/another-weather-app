@@ -1,11 +1,6 @@
 {
   "name": "Python",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "VARIANT": "3"
-    }
-  },
+  "image": "python:3",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
