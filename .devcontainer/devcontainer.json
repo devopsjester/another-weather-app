@@ -1,0 +1,23 @@
+{
+  "name": "Python",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "3"
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "GitHub.copilot",
+    "GitHub.copilot-chat"
+  ],
+  "forwardPorts": [
+    8000
+  ],
+  "appPort": 8000,
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteUser": "vscode"
+}
